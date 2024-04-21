@@ -14,6 +14,6 @@ install_py_deps:
 run:
 	make build_nim_lib
 	echo "Executing main.py"
-	python3 main.py
+	python3 -m flask --app main run
 
 # end

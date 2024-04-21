@@ -50,8 +50,11 @@ proc n_prime*(n: int): int {.exportpy.} =
   var
     i = 1
     n = n
+    prime = 1
   while n > 0:
     if is_prime(i):
-      n = i
+      prime = i
+      n -= 1
     i += 1
+  echo "finished priming nim"
   n
